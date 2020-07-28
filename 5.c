@@ -68,7 +68,7 @@ void delete()
 
 void display()
 {
-    if(front==-1 || rear==-1)
+    if(front==-1)
     {
         printf("\nthe queue is empty\n");
     }
