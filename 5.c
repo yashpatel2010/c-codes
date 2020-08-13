@@ -1,7 +1,8 @@
+//Queue
+
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
-#define max 5
 void insert();
 void delete();
 void display();

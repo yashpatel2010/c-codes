@@ -1,3 +1,4 @@
+//infix to postfix
 #include<stdio.h>
 #define size 100
 int top=-1;
