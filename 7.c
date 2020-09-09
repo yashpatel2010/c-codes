@@ -6,18 +6,16 @@
 
 
 struct node
-    {
+{
         int data;
         struct node *next;
-    };
-    struct node *head,*temp,*new_node;
-    int count=0;
+};
+struct node *head,*temp,*new_node;
+int count=0;
 
 
 void create_node()
-
 {
-    
     int choice;
     head=0;
 
@@ -35,7 +33,6 @@ void create_node()
         }
         else
         {
-            
             temp->next=new_node;
             temp=new_node;
         }
@@ -47,9 +44,10 @@ void create_node()
 void display()
 {
     temp=head;
+    printf("\n***Linked list is***\n");
     while(temp!=0)
     {
-        printf("\n***Linked list is***\n");
+        
         printf("%d ",temp->data);
         temp=temp->next;
         count++;
@@ -60,7 +58,7 @@ void display()
 
 void insert_at_beg()
 {
-    new_node=(struct node *)malloc(sizeof(struct node));\
+    new_node=(struct node *)malloc(sizeof(struct node));
     printf("\nEnter an element for new node: ");
     scanf("%d",&new_node->data);
     new_node->next=head;
